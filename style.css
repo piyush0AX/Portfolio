@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: #333;
+    font-size: 16px;
+}
+/* Navbar styles */
+.navbar {
+    background: #292b2c;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar .max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar .menu {
+    list-style: none;
+    display: flex;
+}
+.navbar .menu li {
+    margin-left: 20px;
+}
+.navbar .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.navbar .menu a:hover {
+    background-color: crimson;
+    color: #fff;
+}
+/* Home Section */
+.home{
+    display: flex;
+    height: 100vh;
+    background-color: #fff;
+}
+.home .max-width{
+  width: 100%;
+}
+.home .home-content{
+    margin-left: 150px;
+    margin-top: 250px;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+/* About Section */
+.about {
+    background: #fff;
+    padding: 60px 20px;
+}
+.about .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .content.right {
+    margin-top: 20px;
+}
+.about .text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about p {
+    max-width: 800px;
+    text-align: center;
+}
+/* Skills Section */
+.skills {
+    background: #f4f4f4;
+    padding: 60px 20px;
+}
+.skills .title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skills-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.column {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.column.left {
+    text-align: center;
+}
+.column.left .text {
+    font-size: 20px;
+}
+.column.left p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.column.right {
+    text-align: center;
+}
+.bars {
+    margin-bottom: 20px;
+}
+.bars .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.bars .line {
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    position: relative;
+    width: 100%;
+}
+.bars .line.html {
+    width: 60%;
+    background: crimson;
+}
+.bars .line.css {
+    width: 40%;
+    background: crimson;
+}
+.bars .line.php {
+    width: 60%;
+    background: crimson;
+}
+.bars .line.mysql {
+    width: 70%;
+    background: crimson;
+}
+/* Contact Section */
+.contact {
+    background: #fff;
+    padding: 60px 20px;
+}
+.contact .title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.column.left,
+.column.right {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.column.left {
+    text-align: center;
+}
+.column.right {
+    text-align: center;
+}
+.icons .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.icons .info {
+    font-size: 18px;
+}
+.icons .info .head {
+    font-size: 20px;
+    font-weight: bold;
+}
+.icons .info .sub-title {
+    color: #555;
+}
+.contact .text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact .text a {
+    text-decoration: none;
+}
+/* Footer Styles */
+footer {
+    background: #292b2c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display:menu;
+    }
+    .home-content {
+        padding: 0 20px;
+    }
+    .skills-content {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .contact-content {
+        flex-direction: column;
+    }  
+    .contact .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .icons img {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .home .text-2 {
+        font-size: 36px;
+    }
+    .home .text-3 {
+        font-size: 22px;
+    }
+    .about .text {
+        font-size: 16px;
+    }
+    .skills .title,
+    .contact .title {
+        font-size: 28px;
+    }
+    .contact .text {
+        font-size: 16px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+@media (max-width: 350px) {
+    .navbar .menu {
+        display:menu; 
+    }
+    .home-content {
+        padding: 0 20px;
+    }
+    .skills-content {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .contact-content {
+        flex-direction: column;
+    }  
+    .contact .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .icons img {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    .home .text-2 {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .home .text-3 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .about .text {
+        font-size: 14px;
+        text-align: center;
+
+    }
+    .skills .title,
+    .contact .title {
+        font-size: 26px;
+        justify-content: center;
+    }
+    .contact .text {
+        font-size: 14px;
+        justify-content: center;
+    }
+    footer {
+        font-size: 12px;
+        justify-content: center;
+    }
+}
